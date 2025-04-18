@@ -1,0 +1,104 @@
+* {
+    font-family: Symbols Nerd Font Mono, Roboto Mono;
+    font-size: 18px;
+}
+
+window#waybar {
+    background-color: #1d2021;
+}
+
+#workspaces{
+    padding: 6px 0px;
+}
+
+#workspaces button {
+    padding: 0px 8px;
+    background-color: transparent;
+    color: #4d4d4d;
+}
+
+#workspaces button.active {
+    color: #256b4d;
+}
+
+#workspaces button.empty {
+    color: #2c2c2c;
+}
+
+#workspaces button:hover {
+    background: #bdbdbd;
+}
+
+#workspaces button.focused {
+    background-color: #64727D;
+}
+
+#workspaces button.urgent {
+    color: #8a2321;
+}
+
+#mode {
+    background-color: #64727D;
+}
+
+#clock,
+#battery,
+#pulseaudio,
+#tray,
+#custom-notification {
+    font-size: 16px;
+    padding: 0 10px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+#window,
+#workspaces {
+    margin-left: 8px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#clock:hover,
+#battery:hover,
+#pulseaudio:hover,
+#tray:hover,
+#custom-notification:hover {
+    background-color: #1b5039;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray menu {
+    font-size: 10px;
+}
+
+#tray menu menuitem:hover {
+    background-color: #1b5039;
+}
+
+#custom-notification {
+    margin-right: 12px;
+}
+
+#custom-logo {
+    color: #4d4d4d;
+    margin-left: 10px;
+}
+
+#custom-line {
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #4d4d4d;
+}

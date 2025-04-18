@@ -1,0 +1,87 @@
+//----GLOBAL VARS----//
+* {
+    mainbackground: #1d2021;
+    background: #2c2c2c;
+    textcolor: #ffffff;
+    selectedbackground: #256b4d;
+}
+
+//----MAIN WINDOW----//
+window {
+    width: 35%;
+    background-color: @mainbackground;
+    text-color: @textcolor;
+    border: none;
+    padding: 20px 10px 20px 20px;
+}
+
+//----ROW #----//
+num-filtered-rows,
+textbox-num-sep,
+num-rows {
+    enabled: false;
+}
+
+//----PROMPT----//
+prompt {
+    enabled: false;
+}
+
+//----COLON----//
+textbox-prompt-colon {
+    str: ""; 
+    padding: 15px 20px;
+    text-color: @textcolor;
+    border: 0px;
+    background-color: @background;
+    margin: 0px 0px;
+}
+
+//----SEARCH BAR----//
+entry {
+    placeholder: "Search...";
+    text-color: @textcolor;
+    background-color: @background;
+    border: 0px;
+padding: 15px 0px;
+}
+
+//----LIST CONTAINER----//
+listview {
+    border: 0px;
+    scrollbar: false;
+    margin: 10px 10px 10px 0px;
+    lines: 10;
+}
+
+//----LIST ELEMENTS----//
+element.normal.normal {
+    background-color: @background;
+    text-color: @textcolor;
+    border: 0px;
+}
+
+element.alternate.normal {
+    background-color: @background;
+    text-color: @textcolor;
+    border: 0px;
+}
+
+element selected.normal {
+    border: 0px;
+    background-color: @selectedbackground;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    border: 0px;
+    padding: 11px 10px 10px 10px;
+}
+
+element-icon {
+    background-color: inherit;
+    size: 30;
+    padding: 8px;
+    border: 0px;
+}
