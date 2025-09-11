@@ -29,7 +29,7 @@ prompt {
 
 //----COLON----//
 textbox-prompt-colon {
-    str: ""; 
+    str: ""; 
     padding: 15px 20px;
     text-color: @textcolor;
     border: 0px;
