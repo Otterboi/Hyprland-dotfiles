@@ -1,3 +1,4 @@
+from Test.src.utils.math import square_num
 def divide_cats(cat1: dict, cat2: dict) -> dict:
     """Divide cat attributes by dividing numeric values and combining string attributes."""
     return {
@@ -6,3 +7,5 @@ def divide_cats(cat1: dict, cat2: dict) -> dict:
         "weight": cat1.get('weight', 0) / cat2.get('weight', 1) if cat2.get('weight', 1) != 0 else 0,
         "breed": f"{cat1.get('breed', '')}/{cat2.get('breed', '')}"
     }
+
+square_num(2);
